@@ -5,6 +5,7 @@ img: piece-of-cheese.png
 alt: A snapshot of the website which shows a maze, a rat sprite and a cheese sprite at the end of the maze
 link: https://jghinestrosa.github.io/piece-of-cheese/
 github: https://github.com/jghinestrosa/piece-of-cheese
+projectDate: 2015-10-14
 ---
 
 I think this is the first game I made for the web. Maybe the first one I ever ~did~ finished.

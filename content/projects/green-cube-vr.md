@@ -5,6 +5,7 @@ img: green-cube-vr.png
 alt: A snapshot of the web, a lot of blue, red, and green cubes are displayed over a black background
 link: https://green-cube-vr.surge.sh/
 github: https://github.com/jghinestrosa/green-cube-vr/
+projectDate: 2018-06-09
 ---
 
 Once upon a time, at college, my friends and I were totally focused in Android development. We were done with college projects and exercises and we started to enjoy developing our own projects. 

@@ -5,6 +5,7 @@ img: messages-from-another-place.png
 alt: A snapshot of the website, which shows a background that reminds to the Red Room from Twin Peaks and a tape recorder in the center of the viewport
 link: https://jghinestrosa.github.io/messages-from-another-place/
 github: https://github.com/jghinestrosa/messages-from-another-place
+projectDate: 2014-05-28
 ---
 
 This is one of my very first projects from when I started learning JavaScript and CSS.

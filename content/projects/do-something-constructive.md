@@ -5,6 +5,7 @@ img: do-something-constructive.png
 alt: A snapshot of the website which shows a black screen and the words 'do something constructive' in the center of the viewport
 link: https://do-something-constructive.surge.sh/
 github: https://github.com/jghinestrosa/do-something-constructive
+projectDate: 2017-07-08
 ---
 
 Adventure games are one of my favourites game genres and this is partially due to the amazing work done by LucasArts during the 90s.

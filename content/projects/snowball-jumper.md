@@ -5,6 +5,7 @@ img: snowball-jumper.png
 alt: A screenshot of the game, which shows the title of the game and the player sprite in the left
 link: https://snowball-jumper.surge.sh/
 github: https://github.com/jghinestrosa/snowball-jumper
+projectDate: 2017-12-31
 ---
 
 This is a game a decided to make during the 2017 Christmas. I was at home and decided to spend some of my holidays time to make a game. But I was more interested on some kind of game jam just for the fun of it. So I didn't pay special attention to implementation details.
