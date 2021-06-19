@@ -137,6 +137,12 @@ export default {
     margin: 0;
   }
 
+  @media only screen and (max-width: 650px) {
+    .blog-posts-list-item {
+      padding: 0px;
+    }
+  }
+
   /* retro mode */
 
   .retro-mode .blog-posts-list-item a {

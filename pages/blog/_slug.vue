@@ -101,6 +101,14 @@ export default {
     margin: 50px auto;
   }
 
+  @media only screen and (max-width: 650px) {
+    .blog-posts-list-item {
+      padding: 0px;
+    }
+  }
+
+  /* retro mode */
+
   .retro-mode .blog-article .nuxt-content p code {
     background: lightgray !important;
     color: black;
