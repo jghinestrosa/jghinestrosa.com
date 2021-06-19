@@ -51,4 +51,59 @@ export default {
     margin-bottom: 20px;
     margin-top: 10px;
   }
+
+  .blog-article .nuxt-content p {
+    margin-bottom: 20px;
+  }
+
+  .blog-article a {
+    text-decoration: none;
+  }
+
+  .blog-article a:hover {
+    text-decoration: underline;
+  }
+
+  .blog-article p a {
+    color: blue;
+  }
+
+  .blog-article .nuxt-content p code {
+    background: lightgray !important;
+    padding: 5px;
+    border-radius: 2px;
+  }
+
+  .blog-article .nuxt-content-highlight {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .blog-article .nuxt-content-highlight .filename {
+    background: #263238;
+    color: white;
+    display: block;
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 10px;
+    font-size: 14px;
+  }
+
+  .blog-article .nuxt-content-highlight pre {
+    margin: 0;
+  }
+
+  .blog-article img {
+    max-width: 50vw;
+    border: 1px solid lightgray;
+    box-shadow: 0px 2px 2px lightgray;
+    display: block;
+    margin: 50px auto;
+  }
+
+  .retro-mode .blog-article .nuxt-content p code {
+    background: lightgray !important;
+    color: black;
+    padding: 5px;
+  }
 </style>

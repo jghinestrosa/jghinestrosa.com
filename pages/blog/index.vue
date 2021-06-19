@@ -90,18 +90,51 @@ export default {
 
   .blog-posts-list-item a {
     text-decoration: none;
-    color: black;
   }
 
   .blog-posts-list-item a:hover {
     text-decoration: underline;
   }
 
+  .blog-posts-list-item p a {
+    color: blue;
+  }
+
   .blog-posts-list-item img {
-    max-width: 50vw;
-    margin-bottom: 20px;
+    max-width: 60vw;
     border: 1px solid lightgray;
     box-shadow: 0px 2px 2px lightgray;
+    display: block;
+    margin: 50px auto;
+  }
+
+  .blog-posts-list-item .nuxt-content p {
+    margin-bottom: 20px;
+  }
+
+  .blog-posts-list-item .nuxt-content p code {
+    background: lightgray !important;
+    padding: 5px;
+    border-radius: 2px;
+  }
+
+  .blog-posts-list-item .nuxt-content-highlight {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .blog-posts-list-item .nuxt-content-highlight .filename {
+    background: #263238;
+    color: white;
+    display: block;
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 10px;
+    font-size: 14px;
+  }
+
+  .blog-posts-list-item .nuxt-content-highlight pre {
+    margin: 0;
   }
 
   /* retro mode */
@@ -120,5 +153,11 @@ export default {
     max-width: 100%;
     overflow: hidden;
     display: block;
+  }
+
+  .retro-mode .blog-posts-list-item .nuxt-content p code {
+    background: lightgray !important;
+    color: black;
+    padding: 5px;
   }
 </style>
