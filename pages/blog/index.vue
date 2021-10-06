@@ -114,8 +114,9 @@ export default {
 
   .blog-posts-list-item .nuxt-content p code {
     background: lightgray !important;
-    padding: 5px;
-    border-radius: 2px;
+    padding: 2px 5px;
+    color: black;
+    border-radius: 5px;
   }
 
   .blog-posts-list-item .nuxt-content-highlight {
@@ -159,11 +160,5 @@ export default {
     max-width: 100%;
     overflow: hidden;
     display: block;
-  }
-
-  .retro-mode .blog-posts-list-item .nuxt-content p code {
-    background: lightgray !important;
-    color: black;
-    padding: 5px;
   }
 </style>
