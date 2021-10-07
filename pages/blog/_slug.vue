@@ -37,9 +37,10 @@ export default {
 
 <style>
   .blog-article {
-    max-width: 80vw;
+    max-width: 90vw;
     margin: 0 auto;
     min-height: 80vh;
+    line-height: 1.5;
   }
 
   .blog-article h1 {

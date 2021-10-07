@@ -54,10 +54,11 @@ export default {
   .blog-posts-list {
     margin: 0;
     padding: 0;
+    line-height: 1.5;
   }
 
   .blog-posts-list li {
-    margin: 10px;
+    margin: 10px 0px;
     list-style-type: none;
     text-align: center;
   }

@@ -76,6 +76,7 @@
   .about .text-container {
     max-width: 70%;
     padding: 0px 30px;
+    line-height: 1.5;
   }
 
   .about h2 {

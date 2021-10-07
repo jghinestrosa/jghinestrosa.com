@@ -68,11 +68,11 @@ export default {
 
   .project-entry .nuxt-content {
     font-size: 1.2em;
-    line-height: 1.5em;
     font-size: 1em;
     /* max-width: 90%; */
     /* margin: 0 auto; */
     text-align: justify;
+    line-height: 1.5;
   }
 
   .project-entry .nuxt-content p {
