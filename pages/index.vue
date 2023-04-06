@@ -15,6 +15,7 @@
         <h3 class="links-title">Links of interest:</h3>
         <ul>
           <li><a href="https://github.com/jghinestrosa" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://mastodon.social/@jghinestrosa" target="_blank" rel="noopener noreferrer">Mastodon</a></li>
           <li><a href="https://twitter.com/jghinestrosa" target="_blank" rel="noopener noreferrer">Twitter</a></li>
           <li><a href="https://codepen.io/jghinestrosa/" target="_blank" rel="noopener noreferrer">CodePen</a></li>
         </ul>
