@@ -9,7 +9,7 @@
         <h2 class="subtitle">Computer Science Engineer</h2>
         <ul>
           <li><span class="bold">Working as:</span> Software Developer</li>
-          <li><span class="bold">Focused on:</span> Web</li>
+          <li><span class="bold">Focused on:</span> Web, SmartTVs</li>
           <li><span class="bold">Located at:</span> Barcelona, Spain</li>
         </ul>
         <h3 class="links-title">Links of interest:</h3>
