@@ -1,0 +1,44 @@
+<style webc:keep>
+	.retro-mode { display: inline-block; }
+</style>
+
+<div class="retro-mode">
+	<label for="retro-mode">90s mode</label>
+	<input id="retro-mode" type="checkbox">
+</div>
+
+<script webc:keep>
+class RetroMode extends HTMLElement {
+	constructor() {
+		super();
+	}
+
+	connectedCallback() {
+		const input = this.querySelector('input');
+		const retroMode = JSON.parse(localStorage.getItem('retroMode')) || false;
+		input.checked = retroMode;
+
+		console.log('>>> CONNECTED CALLBACK', this);
+
+		// TODO: I don't know why, connectedCallback is called twice
+		if (!input) {
+			return;
+		}
+
+		input.addEventListener('change', (e) => {
+			const { checked } = e.target;
+			const htmlElement = document.querySelector('html');
+
+			if (checked) {
+				htmlElement.classList.add('retro-mode');
+				localStorage.setItem('retroMode', true);
+			} else {
+				htmlElement.classList.remove('retro-mode');
+				localStorage.setItem('retroMode', false);
+			}
+		});
+	}
+}
+
+customElements.define("retro-mode", RetroMode);
+</script>

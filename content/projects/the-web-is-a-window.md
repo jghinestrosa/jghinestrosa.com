@@ -1,11 +1,12 @@
 ---
+tags: project
 title: the web is a window
 description: A conceptual add-on for Firefox
 img: the-web-is-a-window.png
 alt: A snapshot of the add-on enabled in the Wikipedia frontpage, which covers it as Wikipedia was behind a wall with a window
 link: https://addons.mozilla.org/es/firefox/addon/the-web-is-a-window/
 github: https://github.com/jghinestrosa/the-web-is-a-window
-projectDate: 2020-07-09
+date: 2020-07-09
 ---
 
 I always saw the web as a window through which we can access to unlimited resources, infinite knowledge and different point of views.

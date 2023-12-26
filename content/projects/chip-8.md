@@ -1,11 +1,12 @@
 ---
+tags: project
 title: Chip-8
 description: Another chip-8 implementation made in JavaScript
 img: chip-8.png
 alt: A snapshot of the project, which shows a chip-8 emulator running the Pong game
 link: https://another-chip-8.netlify.app/
 github: https://github.com/jghinestrosa/chip-8
-projectDate: 2020-12-13
+date: 2020-12-13
 ---
 
 I've been always interested on how emulators work. Being able to emulate a physical machine in a virtual way feels like magic, doesn't it?

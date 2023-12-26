@@ -1,0 +1,15 @@
+---
+layout: page.njk
+---
+
+<div class="project-entry">
+	<h1>{{title}}</h1>
+	<p class="project-image">
+		<img src="/assets/{{img}}" alt="{{ alt }}">
+	</p>
+	<p class="links">
+	<a href="{{ link }}" target="_blank">Link</a>
+	<a href="{{ github }}" target="_blank">Github</a>
+	</p>
+	{{ content | safe }}
+</div>

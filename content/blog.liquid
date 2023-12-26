@@ -1,0 +1,19 @@
+---
+layout: page.njk
+---
+
+<main class="blog">
+	<h1>Blog</h1>
+    <ul class="blog-posts-list">
+		{%- for post in collections.posts reversed -%}
+      <li>
+          <div class="blog-posts-list-item">
+						<a href="{{ post.url }}">
+              <h3>{{ post.data.title }}</h3>
+            </a>
+						{{ post.content }}
+          </div>
+      </li>
+		{%- endfor -%}
+    </ul>
+</main>
