@@ -77,7 +77,7 @@ Yeah! Now I run `npm run build` and that's it! Let's take a look to the generate
 
 Beautiful, isn't it? But... wait! What is that? `const` and `() =>`?
 
-![A snapshot of the generated bundle, which contains constants and arrow functions](/assets/const-arrow-functions.png)
+![A snapshot of the generated bundle, which contains constants and arrow functions](/blog/the-target-of-webpack/const-arrow-functions.png)
 
 Didn't I configure well the `.babelrc` file? Let's take a look:
 
