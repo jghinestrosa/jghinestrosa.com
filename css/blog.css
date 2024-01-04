@@ -2,7 +2,7 @@
   margin: 10px 30px;
 }
 
-.blog h1 {
+.blog > h1 {
   margin-bottom: 20px;
   text-align: center;
 }
@@ -15,20 +15,20 @@
 .blog-posts-list {
   margin: 0;
   padding: 0;
-  line-height: 1.5;
 }
 
-.blog-posts-list li {
+.blog-posts-list li.blog-posts-list-item {
   margin: 10px 0px;
   list-style-type: none;
   text-align: center;
 }
 
-.blog-posts-list li:not(:last-child) {
+.blog-posts-list li.blog-posts-list-item:not(:last-child) {
   border-bottom: 1px solid lightgray;
 }
 
-.blog-posts-list-item {
+.blog-post {
+  line-height: 1.5;
   /* padding: 0; */
   width: 100%;
   padding: 40px;
@@ -43,28 +43,29 @@
 /*margin: 20px 0;*/
 /*}*/
 
-.blog-posts-list-item h3 {
+.blog-post h3,
+.blog-post h1 {
   font-size: 22px;
   margin-bottom: 10px;
 }
 
-.blog-posts-list-item h4 {
+.blog-post h4 {
   margin-bottom: 20px;
 }
 
-.blog-posts-list-item a {
+.blog-post a {
   text-decoration: none;
 }
 
-.blog-posts-list-item a:hover {
+.blog-post a:hover {
   text-decoration: underline;
 }
 
-.blog-posts-list-item p a {
+.blog-post p a {
   color: blue;
 }
 
-.blog-posts-list-item img {
+.blog-post img {
   max-width: 60vw;
   border: 1px solid lightgray;
   box-shadow: 0px 2px 2px lightgray;
@@ -72,33 +73,23 @@
   margin: 50px auto;
 }
 
-.blog-posts-list-item p {
+.blog-post p {
   margin-bottom: 20px;
 }
 
-.blog-posts-list-item p code {
+/* Code not with syntax highlight */
+.blog-post :not(pre) code {
   background: lightgray !important;
   padding: 2px 5px;
   color: black;
   border-radius: 5px;
 }
 
-.blog-posts-list-item .nuxt-content-highlight {
-  margin-top: 40px;
-  margin-bottom: 40px;
+.blog-post pre {
+  margin-bottom: 20px;
 }
 
-.blog-posts-list-item .nuxt-content-highlight .filename {
-  background: #263238;
-  color: white;
-  display: block;
-  text-align: right;
-  padding-right: 10px;
-  padding-top: 10px;
-  font-size: 14px;
-}
-
-.blog-posts-list-item pre {
+.blog-post ul {
   margin-bottom: 20px;
 }
 
@@ -110,20 +101,20 @@
 
 /* retro mode */
 
-.retro-mode .blog-posts-list-item a {
+.retro-mode .blog-post a {
   text-decoration: underline;
   color: blue;
 }
 
-.retro-mode .blog-posts-list-item {
+.retro-mode .blog-post {
   border-bottom: none;
 }
 
-.retro-mode .blog-posts-list li:not(:last-child) {
+.retro-mode .blog-posts-list li.blog-posts-list-item:not(:last-child) {
   border-bottom: 0px;
 }
 
-.retro-mode .blog-posts-list li:not(:last-child):after {
+.retro-mode .blog-posts-list li.blog-posts-list-item:not(:last-child):after {
   content: url("/assets/separator.gif");
   max-width: 100%;
   overflow: hidden;

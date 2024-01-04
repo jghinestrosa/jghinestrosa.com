@@ -6,8 +6,8 @@ layout: page.njk
 	<h1>Blog</h1>
     <ul class="blog-posts-list">
 		{%- for post in collections.posts reversed -%}
-      <li>
-          <div class="blog-posts-list-item">
+      <li class="blog-posts-list-item">
+          <div class="blog-post">
 						<a href="{{ post.url }}">
               <h3>{{ post.data.title }}</h3>
             </a>
