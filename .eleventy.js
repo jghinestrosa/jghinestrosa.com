@@ -32,6 +32,8 @@ module.exports = function(eleventyConfig) {
 	// Enable RSS
   eleventyConfig.addPlugin(pluginRss);
 
+	eleventyConfig.addWatchTarget("./content/blog/");
+
 	return {
 		// Control which files Eleventy will process
 		// e.g.: *.md, *.njk, *.html, *.liquid
