@@ -1,17 +1,12 @@
 .project-entry {
   /* max-width: 80vw; */
-  max-width: 85vw;
+  /*max-width: 85vw;*/
   margin: 0 auto;
 }
 
 .project-image {
   text-align: center;
   margin-bottom: 20px;
-}
-
-.project-entry h1 {
-  text-align: center;
-  margin-bottom: 30px;
 }
 
 .project-entry img {
@@ -37,20 +32,31 @@
 
 .project-entry .links a:hover {
   text-decoration: none;
-  /* background: red; */
   background: #35495e;
   color: white;
 }
 
-.project-entry .nuxt-content {
+.project-content{
   font-size: 1.2em;
   font-size: 1em;
-  /* max-width: 90%; */
-  /* margin: 0 auto; */
+  max-width: 60vw; 
+  margin: 0 auto;
   text-align: justify;
   line-height: 1.5;
 }
 
 .project-entry p {
   margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 650px) {
+  .project-entry img {
+    max-width: 100%;
+    border-radius: 2px;
+    box-shadow: 0px 3px 8px gray;
+  }
+
+  .project-content {
+    max-width: 100%;
+  }
 }

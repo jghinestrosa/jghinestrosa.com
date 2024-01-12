@@ -2,19 +2,17 @@
 layout: page.njk
 ---
 
-<main class="projects">
-	<h1>Projects</h1>
-	<ul class="projects-list">
-		{%- for project in collections.project -%}
-			<li>
-				<div class="projects-list-item">
-					<a href="{{ project.url }}">
-						<h3>{{ project.data.title }}</h3>
-						<img src="/assets/{{project.data.img}}" alt="{{project.alt}}">
-					</a>
-					<p>{{ project.data.description }}</p>
-				</div>
-			</li>
-		{%- endfor -%}
-	</ul>
-</main>
+<h1>Projects</h1>
+<ul class="projects-list">
+  {%- for project in collections.project -%}
+    <li>
+      <article class="projects-list-item">
+        <a href="{{ project.url }}">
+          <h3>{{ project.data.title }}</h3>
+          <img src="/assets/{{project.data.img}}" alt="{{project.alt}}">
+        </a>
+        <p>{{ project.data.description }}</p>
+      </article>
+    </li>
+  {%- endfor -%}
+</ul>

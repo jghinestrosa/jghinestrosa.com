@@ -2,7 +2,7 @@
 layout: page.njk
 ---
 
-<div class="project-entry">
+<article class="project-entry">
 	<h1>{{title}}</h1>
 	<p class="project-image">
 		<img src="/assets/{{img}}" alt="{{ alt }}">
@@ -11,5 +11,7 @@ layout: page.njk
 	<a href="{{ link }}" target="_blank">Link</a>
 	<a href="{{ github }}" target="_blank">Github</a>
 	</p>
-	{{ content | safe }}
+  <div class="project-content">
+    {{ content | safe }}
+  </article>
 </div>

@@ -29,17 +29,17 @@
 	<div class="default-layout">
     <header>
 			<span class="name-title">{{ headerName }}</span>
-      <nav>
-        <a href="/">Home</a>
+      <nav><a href="/">Home</a>
         <a href="/about">About</a>
         <a href="/projects">Projects</a>
-        <a href="/blog">Blog</a>
-      </nav>
+        <a href="/blog">Blog</a></nav>
 		{% renderTemplate "webc" %}
 		<retro-mode></retro-mode>
 		{% endrenderTemplate %}
     </header>
+    <main>
 		{{ content | safe }}
+    </main>
     <footer><span>:wq</span></footer>
 		<script>{% getBundle "js" %}</script>
   </div>
