@@ -12,8 +12,8 @@ module.exports = function(eleventyConfig) {
   // Copy `css/fonts/` to `_site/css/fonts`
   // Keeps the same directory structure.
   eleventyConfig.addPassthroughCopy('assets');
+  eleventyConfig.addPassthroughCopy({ 'robots/robots.txt': '/robots.txt' });
 	eleventyConfig.addPassthroughCopy('content/blog/**/*.png');
-
   eleventyConfig.addPassthroughCopy('css');
 
   // Copy any .jpg file to `_site`, via Glob pattern
