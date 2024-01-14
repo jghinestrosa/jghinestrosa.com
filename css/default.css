@@ -62,7 +62,6 @@ h4 {
 }
 
 main {
-  /*padding: 40px;*/
   width: 95vw;
   margin: 0 auto;
 }
@@ -97,5 +96,9 @@ footer span {
   .default-layout nav:after {
     content: "";
     margin: 0;
+  }
+
+  main {
+    width: 85vw;
   }
 }
