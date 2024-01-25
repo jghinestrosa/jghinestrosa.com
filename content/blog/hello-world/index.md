@@ -1,5 +1,5 @@
 ---
-tags: posts
+tags: meta
 title: Hello World
 description: The first blog post just to give Nuxt a try
 date: 2021-01-17

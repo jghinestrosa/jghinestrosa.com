@@ -1,5 +1,5 @@
 ---
-tags: posts
+tags: meta
 title: Migrating to Eleventy
 description:
 date: 2023-01-04

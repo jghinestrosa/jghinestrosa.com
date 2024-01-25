@@ -11,6 +11,17 @@ layout: page.njk
           <h3>{{ post.data.title }}</h3>
         </a>
         {{ post.content }}
+        <section class="blog-post-meta">
+          Published on
+          <time>
+          {{ post.date | readableDate }}
+          </time>
+          under
+          {% assign filteredTags = post.data.tags | filterTagListForBlogPosts%}
+          {%- for tag in filteredTags -%}
+            <span>#{{ tag }} </span>
+          {%- endfor -%}
+        </section>
       </article>
     </li>
   {%- endfor -%}

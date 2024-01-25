@@ -6,4 +6,14 @@ layout: page.njk
 <article class="blog-post">
 	<h3>{{ title }}</h3>
 	{{ content | safe }}
+  <section class="blog-post-meta">
+    Published on
+    <time>
+      {{ date | readableDate }}
+    </time>
+    under
+    {%- for tag in tags | filterTagListForBlogPosts -%}
+      <span> #{{ tag }} </span>
+    {%- endfor -%}
+</section>
 </article>

@@ -32,6 +32,18 @@ module.exports = function(eleventyConfig) {
 	// Enable RSS
   eleventyConfig.addPlugin(pluginRss);
 
+  // Filters
+  eleventyConfig.addFilter('readableDate', (dateObj, format, zone) => {
+    const day = dateObj.getDate();
+    const month = dateObj.getMonth() + 1;
+    const year = dateObj.getFullYear();
+    return `${year}/${month < 10 ? '0' : ''}${month}/${day < 10 ? '0' : ''}${day}`;
+	});
+
+  eleventyConfig.addFilter('filterTagListForBlogPosts', function filterTagListForBlogPosts(tags) {
+		return (tags || []).filter((tag) => tag !== 'posts');
+	});
+
 	eleventyConfig.addWatchTarget("./content/blog/");
 
 	return {

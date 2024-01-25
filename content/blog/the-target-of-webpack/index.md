@@ -1,5 +1,5 @@
 ---
-tags: posts
+tags: development
 title: The target of Webpack
 description:
 date: 2021-06-19
