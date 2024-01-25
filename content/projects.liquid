@@ -7,8 +7,12 @@ layout: page.njk
   {%- for project in collections.project -%}
     <li>
       <article class="projects-list-item">
+        <h3>
+          <a href="{{ project.url }}">
+            {{ project.data.title }}
+          </a>
+        </h3>
         <a href="{{ project.url }}">
-          <h3>{{ project.data.title }}</h3>
           <img src="/assets/{{project.data.img}}" alt="{{project.alt}}">
         </a>
         <p>{{ project.data.description }}</p>
