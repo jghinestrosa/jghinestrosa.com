@@ -4,21 +4,33 @@ layout: default.njk
 
 <section class="profile-container">
 <div class="profile">
-  <img
-    class="profile-pic"
-    src="/assets/profile-pic.jpg"
-    alt="A picture of Jorge García Hinestrosa"
-  />
-  <div class="profile-text">
-    <h1 class="title">Jorge García Hinestrosa</h1>
-    <h2 class="subtitle">Computer Science Engineer</h2>
-    <ul>
-      <li><span class="bold">Working as:</span> Software Developer</li>
-      <li><span class="bold">Focused on:</span> Web, SmartTVs</li>
-      <li><span class="bold">Located at:</span> Barcelona, Spain</li>
-    </ul>
-    <h2>{{ retroMode }}</h2>
-    <h3 class="links-title">Links of interest:</h3>
+  <div class="bottom-row">
+		<div class="left-column">
+		<img
+			class="profile-pic"
+			src="/assets/profile-pic.jpg"
+			alt="A picture of Jorge García Hinestrosa"
+		/>
+		</div>
+		<div class="right-column">
+		  <div class="work">
+				<h2 class="subtitle">Computer Science Engineer</h2>
+				<img src="assets/computer.gif" />
+			</div>
+			<div class="status">
+				<h3 class="status-title">Current status</h3>
+				<ul>
+					<li><span class="bold">Working as:</span> Software Developer</li>
+					<li><span class="bold">Focused on:</span> Web, SmartTVs</li>
+					<li><span class="bold">Located at:</span> Barcelona, Spain</li>
+				</ul>
+				<img src="assets/tv2.gif" />
+			</div>
+		<div class="links-container">
+    <h3 class="links-title">Links of interest</h3>
+		<div>
+			<img src="/assets/email.gif" />
+		</div>
     <ul>
       <li>
         <a
@@ -53,7 +65,8 @@ layout: default.njk
         >
       </li>
     </ul>
-    <retro-mode></retro-mode>
+		</div>
+		</div>
   </div>
 </div>
 </section>

@@ -6,11 +6,14 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  background: green;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
+  background: url("/assets/tile1.gif");
 }
 
 html.retro-mode {
@@ -27,20 +30,69 @@ html.retro-mode {
   margin: 0;
 }
 
-.default-layout header {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-end;
-  align-content: center;
-  padding: 10px;
-}
-.default-layout nav {
-  display: inline-block;
+.default-layout {
+  min-height: 100%;
 }
 
-.default-layout nav::before, .default-layout nav::after {
-  content: "/";
-  margin: 0px 8px;
+.default-layout header {
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+.default-layout nav {
+  display: inline-block;
+  background: white;
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+  border-left: 5px solid lightgray;
+  border-top: 5px solid lightgray;
+  font-size: 1.2em;
+  font-family: "Times New Roman";
+  margin-bottom: 0.6em;
+}
+
+.default-layout nav a {
+  display: inline-block;
+  text-align: center;
+  margin: 0.5em;
+}
+
+.default-layout nav div img {
+  display: block;
+  margin-bottom: 0.6em;
+}
+
+.default-layout nav div span {
+  display: block;
+}
+
+.default-layout header > div {
+  margin: 0 auto;
+
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+  border-left: 5px solid lightgray;
+  border-top: 5px solid lightgray;
+  background: white;
+  width: 65vw;
+  margin-bottom: 0.5em;
+  font-family: "Times New Roman";
+  padding: 0.7em;
+  text-align: center;
+}
+
+.default-layout header > div h1 {
+  margin-bottom: 0.2em;
+  color: red;
+  color: blue;
+  color: indigo;
+  color: brown;
+}
+
+.default-layout header > div h2 {
+  text-transform: lowercase;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
 }
 
 h1 {
@@ -62,43 +114,27 @@ h4 {
 }
 
 main {
-  width: 95vw;
   margin: 0 auto;
+
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+  border-left: 5px solid lightgray;
+  border-top: 5px solid lightgray;
+  background: white;
+  width: 95vw;
+  padding: 2em;
+  margin-bottom: 2em;
 }
 
 footer {
-  text-align: right;
-}
-
-footer span {
-  padding: 10px;
-}
-
-/* retro mode */
-.retro-mode footer:before {
-  content: url("/assets/netscape.gif");
   text-align: center;
-  width: 100vw;
-  display: inline-block;
+  margin-bottom: 2em;
 }
 
 @media only screen and (max-width: 600px) {
-  .default-layout header {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-end;
-    align-content: flex-end;
-    padding: 10px;
-    text-align: right;
-  }
-
   .default-layout span.name-title:after,
   .default-layout nav:after {
     content: "";
     margin: 0;
-  }
-
-  main {
-    width: 85vw;
   }
 }
