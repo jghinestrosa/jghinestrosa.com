@@ -29,6 +29,7 @@
 
 .bold {
   font-weight: bold;
+  text-transform: lowercase;
 }
 
 .right-column .work {
@@ -41,6 +42,7 @@
   border-top: 4px ridge lightgray;
   font-size: 1.2em;
   padding: 0.5em;
+  /*text-transform: lowercase;*/
 }
 
 .right-column .status img {
@@ -64,6 +66,7 @@
   text-align: center;
   text-transform: lowercase;
   font-style: italic;
+  text-shadow: 2px solid red;
 }
 
 .links-container {

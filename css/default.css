@@ -83,10 +83,11 @@ html.retro-mode {
 
 .default-layout header > div h1 {
   margin-bottom: 0.2em;
-  color: red;
-  color: blue;
-  color: indigo;
+  /*color: red;*/
+  /*color: blue;*/
+  /*color: indigo;*/
   color: brown;
+  text-shadow: 1px 1px black;
 }
 
 .default-layout header > div h2 {
