@@ -19,6 +19,11 @@
   <body>
 	<div class="default-layout">
     <header>
+			<div>
+				<h1>Jorge García Hinestrosa</h1>
+				<h2>A personal website™</h2>
+				<img src="/assets/earth.gif" />
+			</div>
 			<nav>
 				<a href="/">Home</a>
 				<a href="/about">About</a>
@@ -26,23 +31,21 @@
 				<a href="/art">Art</a>
 				<a href="/blog">Blog</a>
 			</nav>
-			<div>
-				<h1>Jorge García Hinestrosa</h1>
-				<h2>A personal website™</h2>
-				<img src="/assets/earth.gif" />
-			</div>
     </header>
     <main>
 		{{ content | safe }}
     </main>
     <footer>
-			<div>
+			<div class="buttons">
 				<img src="/assets/vim.gif" />
 				<img src="/assets/html_learn_it_today.gif" />
 				<img src="/assets/winamp-miniban.gif" />
 			</div>
-			<div>2005 Jorge García Hinestrosa. All Rights Reserved</div> <div>gifs are from <a href="https://gifcities.org">gifcities</a> | background is from <a href="https://pixelmoondust.neocities.org/archives/archivedtiles/backgroundsindex">pixelmoondust</a></div>
-			<div>Last update: August 20th 2025</div>
+			<div class="disclaimer">
+			<p>2021-2025 Jorge García Hinestrosa. All Rights Reserved</p>
+			<p>gifs are from <a href="https://gifcities.org">gifcities</a> | background is from <a href="https://pixelmoondust.neocities.org/archives/archivedtiles/backgroundsindex">pixelmoondust</a></p>
+			<p>Last update: August 20th 2025</p>
+			</div>
 		</footer>
 		<script>{% getBundle "js" %}</script>
   </div>
