@@ -74,7 +74,7 @@ html.retro-mode {
   border-left: 5px solid lightgray;
   border-top: 5px solid lightgray;
   background: white;
-  width: 65vw;
+  width: 50vw;
   margin-bottom: 0.5em;
   font-family: "Times New Roman";
   padding: 0.7em;
@@ -157,5 +157,9 @@ footer p {
   .default-layout nav:after {
     content: "";
     margin: 0;
+  }
+
+  .default-layout header > div {
+    width: 65vw;
   }
 }
