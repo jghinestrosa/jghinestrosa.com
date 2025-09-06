@@ -1,0 +1,14 @@
+---
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+filter:
+  - all
+  - posts
+permalink: "blog/tags/{{ tag | slugify }}/"
+layout: default
+---
+
+{% assign blogpostslist = collections[tag] %}
+{% include "blogpostslist.liquid" %}

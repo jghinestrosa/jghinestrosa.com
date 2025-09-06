@@ -1,0 +1,25 @@
+<h1>Blog</h1>
+<ul class="blog-posts-list">
+  {%- for post in blogpostslist reversed -%}
+    <li class="blog-posts-list-item">
+      <article class="blog-post">
+        <h3>
+          <a href="{{ post.url }}">{{ post.data.title }}</a>
+        </h3>
+        {{ post.content }}
+        <section class="blog-post-meta">
+          Published on
+          <time>
+          {{ post.date | readableDate }}
+          </time>
+          under
+          {% assign filteredTags = post.data.tags | filterTagListForBlogPosts%}
+          {%- for tag in filteredTags -%}
+            <a href="/blog/tags/{{ tag }}">#{{ tag }} </a>
+          {%- endfor -%}
+        </section>
+      </article>
+    </li>
+  {%- endfor -%}
+</ul>
+
