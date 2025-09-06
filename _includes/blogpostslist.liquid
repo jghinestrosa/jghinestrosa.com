@@ -15,7 +15,7 @@
           under
           {% assign filteredTags = post.data.tags | filterTagListForBlogPosts%}
           {%- for tag in filteredTags -%}
-            <a href="/blog/tags/{{ tag }}">#{{ tag }} </a>
+            <a href="/blog/tags/{{ tag | slugify }}">#{{ tag }} </a>
           {%- endfor -%}
         </section>
       </article>
