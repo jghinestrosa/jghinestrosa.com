@@ -2,7 +2,7 @@
 tags: project
 title: Seinfeld Multiverse
 description: A website that collects movies where Seinfeld actors and actresses played together 
-img: seinfeld-multiverse.jpg
+img: seinfeld-multiverse.png
 alt: A snapshot of the Seinfeld Multiverse website. It displays a list of movies where two or more actors from Seinfeld appear.
 link: https://seinfeldmultiverse.com
 github: https://github.com/jghinestrosa/seinfeld-multiverse
