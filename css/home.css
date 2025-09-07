@@ -1,16 +1,14 @@
-.profile-container {
+.profile {
   font-family: "Times New Roman";
   border: 4px ridge lightgray;
+
+  display: grid;
+  grid-template-columns: [first] 50% [second] 50%;
+  grid-template-rows: [first] 100%;
 }
 
 .top-row {
   border-bottom: 4px ridge lightgray;
-}
-
-.bottom-row {
-  display: grid;
-  grid-template-columns: [first] 50% [second] 50%;
-  grid-template-rows: [first] 100%;
 }
 
 .profile h1 {
@@ -105,14 +103,12 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .bottom-row {
+  .profile {
     width: 100%;
     display: grid;
 
     grid-template-columns: [first] 100%;
-    grid-template-rows: [first] 50% [second] auto;
-    /*row-gap: 20px;*/
-    /*column-gap: 0px;*/
+    grid-template-rows: [first] auto [second] auto;
 
     margin: 0 auto;
   }
@@ -131,7 +127,7 @@
 }
 
 @media only screen and (max-height: 720px) {
-  .profile-container {
+  .profile {
     height: auto;
   }
 }
