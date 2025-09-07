@@ -1,4 +1,5 @@
 ---
+tags: project
 title: Messages From Another Place
 description: A web to record audio as if you were in the Red Room from Twin Peaks
 img: messages-from-another-place.png
