@@ -4,7 +4,7 @@ layout: layouts/default.njk
 
 <h1>Projects</h1>
 <ul class="projects-list">
-  {%- for project in collections.project reversed -%}
+  {%- for project in collections.project | reverse -%}
     <li>
       <article class="projects-list-item">
         <h3>

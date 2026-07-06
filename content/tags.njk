@@ -11,5 +11,5 @@ permalink: "blog/tags/{{ tag | slugify }}/"
 layout: layouts/default.njk
 ---
 
-{% assign blogpostslist = collections[tag] %}
-{% include "partials/blogpostslist.liquid" %}
+{% set blogpostslist = collections[tag] %}
+{% include "partials/blogpostslist.njk" %}
