@@ -8,8 +8,8 @@ pagination:
     - posts
     - project
 permalink: "blog/tags/{{ tag | slugify }}/"
-layout: default
+layout: layouts/default.njk
 ---
 
 {% assign blogpostslist = collections[tag] %}
-{% include "blogpostslist.liquid" %}
+{% include "partials/blogpostslist.liquid" %}

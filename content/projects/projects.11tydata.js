@@ -2,5 +2,5 @@ module.exports = {
 	tags: [
 		"project"
 	],
-	"layout": "project.njk",
+	"layout": "layouts/project.njk",
 };
