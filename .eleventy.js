@@ -1,4 +1,3 @@
-const pluginWebc = require("@11ty/eleventy-plugin-webc");
 const { EleventyRenderPlugin } = require("@11ty/eleventy");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss")
@@ -22,9 +21,6 @@ module.exports = function(eleventyConfig) {
 
 	// Render templates in different templates formats
 	eleventyConfig.addPlugin(EleventyRenderPlugin);
-
-	// Render web components
-	eleventyConfig.addPlugin(pluginWebc);
 
 	// Enable syntax highlight
   eleventyConfig.addPlugin(syntaxHighlight);
@@ -50,7 +46,6 @@ module.exports = function(eleventyConfig) {
 		// Control which files Eleventy will process
 		// e.g.: *.md, *.njk, *.html, *.liquid
 		templateFormats: [
-			"webc",
 			"md",
 			"njk",
 			"html",
